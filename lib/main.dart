@@ -1,21 +1,15 @@
+import 'package:app_mark_1/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: HomePage(),
-    theme: ThemeData(
-      primarySwatch: Colors.purple,
-    ),
-  ));
+  runApp(MyApp());
 }
 
-class HomePage extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Awesome App"),
-      ),
+    return MaterialApp(
+      home: HomePage(),
     );
   }
 }
